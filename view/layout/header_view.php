@@ -1,6 +1,7 @@
 <?php 
 
-$title = "Software&Telecom" ;
+$title = "E.Moreau" ;
+$favicon = "../view/img/favicon.ico";
  ?>
 
 
@@ -8,10 +9,9 @@ $title = "Software&Telecom" ;
  <html>
  <head>
  	<title><?php echo htmlspecialchars($title); ?></title>
- 	<link rel="icon" type="image/png" href="../img/favicon-32x32.png" sizes="32x32" />
-	<link rel="icon" type="image/png" href="../img/favicon-16x16.png" sizes="16x16" />
  	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
- 	<link rel="stylesheet" type="text/css" href="view/css/main.css">
+ 	<link rel="stylesheet" type="text/css" href="../view/css/main.css">
+ 	<link rel="shortcut icon" type="image/x-icon" href="<?php echo $favicon ?>" />
  </head>
  <body>
 
