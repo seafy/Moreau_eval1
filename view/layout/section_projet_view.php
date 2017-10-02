@@ -4,11 +4,11 @@
 				<section>
 					<div class="card" style="width: 20rem;">
 					  <img class="card-img-top" src="http://cdn.servicemagic.eu/library/forms/FR/Travaux/300x200/pct_sr_180.jpg" alt="Card image cap">
-					  <div class="card-block">
-					    <h4 class="card-title">
+					  <div class="card-block text-center">
+					    <h4 class="card-title ">
 					    <?php 
 							foreach ($projets as $key => $value) {
-								echo $value['name'];
+								echo $value['name'] ." ". $value['firstname'];
 							}
 						 ?>
 					    </h4>
@@ -17,16 +17,12 @@
 							echo $value['bilan'];
 						 ?>
 					    </p>
-					    <a href="#" class="btn btn-primary ">let's go!</a>
+					    <em>numero telephone : <br><?php echo $value['phone']; ?></em>
+					    <br>
+					    <a href="article.php?id=?" class="btn btn-primary my-3">Fiche</a>
 					  </div>
 					</div>
 				</section>
-
-					
-				<section>
-
-
-				</section>
-			
+								
 		</div>
 </div>
