@@ -8,6 +8,8 @@ $projets = getProjet();
 
 $connexion = getBdd();
 
+$article = getArticle();
+
 
 include '../view/layout/section_projet_view.php';
 

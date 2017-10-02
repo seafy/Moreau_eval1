@@ -1,12 +1,17 @@
 <hr>
 
-<footer class="text-center fixed-bottom text-white">
-	<article class="float-left my-2 d-flex flex-column">
+<footer class="text-center  fixed-bottom text-white d-flex justify-content-around">
+	
+	<article class="float-left  d-flex flex-column">
 		<a href="#"><img src="../view/img/f.png">M_Moreau</a>
 		<a href="#"><img src="../view/img/t.png">M_Moreau</a>
 	</article>
 
-	<p class="my-4">Copyright by Seafy</p>
+	<p>Copyright by Seafy</p>
+
+	<article class="float-right">
+		<i class="fa fa-map-marker" aria-hidden="true"></i><p><?php echo $adress; ?></p>
+	</article>
 
 </footer>
 

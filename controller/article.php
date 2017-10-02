@@ -6,7 +6,7 @@ include '../model/data.php';
 
 $connexion = getBdd();
 
-$lesprojets = getProjet();
+$theprojets = getProjet();
 
 $users = getUser();
 
