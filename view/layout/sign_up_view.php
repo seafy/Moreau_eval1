@@ -22,7 +22,7 @@
 
 	  <div class="form-group">
 	    <label for="formGroupExampleInput2">MotdePasse</label>
-	    <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Password ici" name="motdepasse">
+	    <input type="password" class="form-control" id="formGroupExampleInput2" placeholder="Password ici" name="motdepasse">
 	  </div>
 
 	  <button type="submit" class="btn btn-primary">Submit</button>
