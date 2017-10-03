@@ -31,7 +31,15 @@ function getProjets() {
 
 function addUser() {
 	$bdd = getBdd();
-	$addUser = $bdd->query('INSERT INTO `user`(`id`, `name`, `firstname`, `age`, `email`, `password`) VALUES ([value-1],[value-2],[value-3],[value-4],[value-5],[value-6])');
+	$addUser = $bdd->prepare('INSERT INTO user (name, firstname, age, email, password) VALUES (:nom, :prenom, :age, email, :motdepasse)');
+	
+	$addUser->execute(array(
+	'name' => $_POST['nom'],
+	'firstname' => $_POST['prenom'],
+	'age' => $_POST['age'],
+	'email' => $_POST['email'],
+	'password' => $_POST['password']
+	));
 	return $addUser;
 }
 
