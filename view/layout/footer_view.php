@@ -7,7 +7,7 @@
 		<a href="#"><img src="../view/img/t.png">M_Moreau</a>
 	</article>
 
-	<p>Copyright by Seafy</p>
+	<p class="py-4">Copyright by Seafy</p>
 
 	<article class="float-right">
 		<i class="fa fa-map-marker" aria-hidden="true"></i><p><?php echo $adress; ?></p>

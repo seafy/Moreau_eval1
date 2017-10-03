@@ -25,7 +25,7 @@ $adress = "56 Place de la Madeleine , 75009 , PARIS";
  <body>
 
  	<header>
- 		<h1 class="text-center fixed-top text-white"><?php echo htmlspecialchars($title) . " Projects!"; ?></h1>
+ 		<h1 class="text-center  text-white"><?php echo htmlspecialchars($title) . " Projects!"; ?></h1>
  	</header>
 
  	<hr>

@@ -1,13 +1,13 @@
 <div class="container ">
 	<div class="row">
-		<h2 class="mx-auto"><?php 
-
-		foreach ($theprojets as $key => $value) {
-			# code...
-			echo $value['name'] . " " . $value['firstname'];
+		<h2 class="mx-auto">
 
 		
-		 ?>
+			
+			<b><?php echo $projet['name'] . " " . $projet['firstname']; ?></b> 
+
+		
+		 
 		 </h2>
 
 		<div class="d-flex justify-content-around w-100">
@@ -18,7 +18,7 @@
 						<b>Etat des lieux :</b>
 						<?php 
 							echo "<br>";
-							echo $value['bilan'];
+							echo $projet['bilan'];
 						 ?>
 					</article>
 
@@ -27,10 +27,10 @@
 					<article id="info" class="my-3 d-flex flex-column text-center">
 						<i class="fa fa-id-card-o" aria-hidden="true"></i>
 						<strong>Infos du client :</strong>
-						<span>nom : <?php echo $value['name']; ?></span>
-						<span>prenom : <?php echo $value['firstname']; ?></span>
-						<span>numero telephone : <?php echo $value['phone']; ?></span>
-						<span>adresse : <?php echo $value['adress']; ?></span>
+						<span>nom : <?php echo $projet['name']; ?></span>
+						<span>prenom : <?php echo $projet['firstname']; ?></span>
+						<span>numero telephone : <?php echo $projet['phone']; ?></span>
+						<span>adresse : <?php echo $projet['adress']; ?></span>
 					</article>
 
 					<hr>
@@ -42,9 +42,9 @@
 							
 							 	# code...
 							 	
-							 	 echo "<strong>prenom: </strong>" . $value['worker'];
+							 	 echo "<strong>prenom: </strong>" . $projet['worker'];
 							 	 echo "<br>";
-							 }
+							 
 						 ?>
 					</section>
 

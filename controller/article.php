@@ -6,9 +6,12 @@ include '../model/data.php';
 
 $connexion = getBdd();
 
-$theprojets = getProjet();
+$theprojets = getProjets();
 
 $users = getUser();
+
+$projet = getProjet($_GET['id']);
+
 
 
 

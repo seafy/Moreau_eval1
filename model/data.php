@@ -13,13 +13,15 @@ function getUser() {
   return $user;
 }
 
-function getArticle() {
+function getProjet($prout) {
 	$bdd = getBdd();
-	$articles = $bdd->query('SELECT * FROM `projets` ORDER BY `projets`.`id` ASC');
-	return $articles;
+	$projet = $bdd->prepare('SELECT * FROM projets WHERE id=? ');
+	$projet -> execute(array($prout));
+	$result = $projet->fetch(PDO::FETCH_ASSOC);
+	return $result;
 }
 
-function getProjet() {
+function getProjets() {
 	$bdd = getBdd();
 	$projets = $bdd->query('SELECT * FROM projets');
 	return $projets;
